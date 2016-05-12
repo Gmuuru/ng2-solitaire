@@ -1,0 +1,205 @@
+
+board {
+	display:block;
+	background-image: url(img/felt.png);
+	background-repeat : repeat;
+	background-size: 10%;
+	width : 100vw;
+	height : 100vh;	
+	padding:50px;
+}
+
+board .row {
+	height:25vh;
+}
+
+.slot {
+	border:2px solid white;
+	border-radius : 5px;
+	height: 10.5vh;
+    width: 3.8vw;
+    position:relative;
+}
+
+.card {    
+	height: 10.5vh;
+    width: 3.8vw;
+	position:absolute;
+	background-size:100%;
+}
+
+.highlight {
+	height: 10.5vh;
+    width: 3.8vw;
+	position:absolute;
+	background-color:lightgreen;
+	opacity:0.5;
+}
+
+.card.off {
+	background-image : url(img/CardBack.png);
+}
+
+.card.C0.off {
+	background-image : none;
+}
+
+.card.CAceClubs.on {
+	background-image : url(img/AceClubs.bmp);
+}
+.card.C2Clubs.on {
+	background-image : url(img/2Clubs.bmp);
+}
+.card.C3Clubs.on {
+	background-image : url(img/3Clubs.bmp);
+}
+.card.C4Clubs.on {
+	background-image : url(img/4Clubs.bmp);
+}
+.card.C5Clubs.on {
+	background-image : url(img/5Clubs.bmp);
+}
+.card.C6Clubs.on {
+	background-image : url(img/6Clubs.bmp);
+}
+.card.C7Clubs.on {
+	background-image : url(img/7Clubs.bmp);
+}
+.card.C8Clubs.on {
+	background-image : url(img/8Clubs.bmp);
+}
+.card.C9Clubs.on {
+	background-image : url(img/9Clubs.bmp);
+}
+.card.C10Clubs.on {
+	background-image : url(img/10Clubs.bmp);
+}
+.card.CJackClubs.on {
+	background-image : url(img/JackClubs.bmp);
+}
+.card.CQueenClubs.on {
+	background-image : url(img/QueenClubs.bmp);
+}
+.card.CKingClubs.on {
+	background-image : url(img/KingClubs.bmp);
+}
+
+.card.CAceDiamonds.on {
+	background-image : url(img/AceDiamonds.bmp);
+}
+.card.C2Diamonds.on {
+	background-image : url(img/2Diamonds.bmp);
+}
+.card.C3Diamonds.on {
+	background-image : url(img/3Diamonds.bmp);
+}
+.card.C4Diamonds.on {
+	background-image : url(img/4Diamonds.bmp);
+}
+.card.C5Diamonds.on {
+	background-image : url(img/5Diamonds.bmp);
+}
+.card.C6Diamonds.on {
+	background-image : url(img/6Diamonds.bmp);
+}
+.card.C7Diamonds.on {
+	background-image : url(img/7Diamonds.bmp);
+}
+.card.C8Diamonds.on {
+	background-image : url(img/8Diamonds.bmp);
+}
+.card.C9Diamonds.on {
+	background-image : url(img/9Diamonds.bmp);
+}
+.card.C10Diamonds.on {
+	background-image : url(img/10Diamonds.bmp);
+}
+.card.CJackDiamonds.on {
+	background-image : url(img/JackDiamonds.bmp);
+}
+.card.CQueenDiamonds.on {
+	background-image : url(img/QueenDiamonds.bmp);
+}
+.card.CKingDiamonds.on {
+	background-image : url(img/KingDiamonds.bmp);
+}
+
+.card.CAceSpades.on {
+	background-image : url(img/AceSpades.bmp);
+}
+.card.C2Spades.on {
+	background-image : url(img/2Spades.bmp);
+}
+.card.C3Spades.on {
+	background-image : url(img/3Spades.bmp);
+}
+.card.C4Spades.on {
+	background-image : url(img/4Spades.bmp);
+}
+.card.C5Spades.on {
+	background-image : url(img/5Spades.bmp);
+}
+.card.C6Spades.on {
+	background-image : url(img/6Spades.bmp);
+}
+.card.C7Spades.on {
+	background-image : url(img/7Spades.bmp);
+}
+.card.C8Spades.on {
+	background-image : url(img/8Spades.bmp);
+}
+.card.C9Spades.on {
+	background-image : url(img/9Spades.bmp);
+}
+.card.C10Spades.on {
+	background-image : url(img/10Spades.bmp);
+}
+.card.CJackSpades.on {
+	background-image : url(img/JackSpades.bmp);
+}
+.card.CQueenSpades.on {
+	background-image : url(img/QueenSpades.bmp);
+}
+.card.CKingSpades.on {
+	background-image : url(img/KingSpades.bmp);
+}
+
+.card.CAceHearts.on {
+	background-image : url(img/AceHearts.bmp);
+}
+.card.C2Hearts.on {
+	background-image : url(img/2Hearts.bmp);
+}
+.card.C3Hearts.on {
+	background-image : url(img/3Hearts.bmp);
+}
+.card.C4Hearts.on {
+	background-image : url(img/4Hearts.bmp);
+}
+.card.C5Hearts.on {
+	background-image : url(img/5Hearts.bmp);
+}
+.card.C6Hearts.on {
+	background-image : url(img/6Hearts.bmp);
+}
+.card.C7Hearts.on {
+	background-image : url(img/7Hearts.bmp);
+}
+.card.C8Hearts.on {
+	background-image : url(img/8Hearts.bmp);
+}
+.card.C9Hearts.on {
+	background-image : url(img/9Hearts.bmp);
+}
+.card.C10Hearts.on {
+	background-image : url(img/10Hearts.bmp);
+}
+.card.CJackHearts.on {
+	background-image : url(img/JackHearts.bmp);
+}
+.card.CQueenHearts.on {
+	background-image : url(img/QueenHearts.bmp);
+}
+.card.CKingHearts.on {
+	background-image : url(img/KingHearts.bmp);
+}

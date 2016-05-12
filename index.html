@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Solitaire !</title>
+    <!-- Stylesheet -->
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+	
+	
+    <!-- Libraries -->
+    <script src="node_modules/es6-shim/es6-shim.js"></script>
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+	
+    <script src="node_modules/typescript/lib/typescript.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/ng2-bootstrap/bundles/ng2-bootstrap.min.js"></script>
+    <script src="node_modules/filesaverjs/FileSaver.min.js"></script>
+
+  </head>
+  <body>
+
+    <!-- Configure System.js, our module loader -->
+    <script>
+      System.config({
+	    transpiler: 'typescript', 
+        typescriptOptions: { emitDecoratorMetadata: true }, 
+        packages: {
+			app: {
+			  format: 'register',
+			  defaultExtension: 'js'
+			}
+		  },
+		  map: {
+			moment: 'node_modules/ng2-bootstrap/node_modules/moment/moment.js'
+		  }
+      });
+      System.import('app/main')
+            .then(null, console.error.bind(console));
+    </script>
+    <div style="padding:0px 10px">
+	<solitaire>App is loading...</solitaire> <!-- <--- Our app loads here! -->
+	</div>
+
+  </body>
+</html>
